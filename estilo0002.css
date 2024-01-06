@@ -1,0 +1,76 @@
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    /*O display: flex permite que você arranje os elementos horizontal ou verticalmente, com ou sem espaços entre eles, de tamanhos iguais ou diferentes*/
+    justify-content: center;
+    /*o justify alinha os items*/
+    align-items: center;
+    /*Para linhas, ela indica ao CSS como empurrar os itens para cima ou para baixo dentro do container. E para uma coluna, como empurrar todos os itens para a esquerda ou direita dentro do container*/
+    height: 100%;
+    flex-direction: column;
+    background-color: #382e3e;
+}
+
+.main-title {
+    color:white;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    /*Ele quebra linha se for necessário*/
+    gap: 16px;
+    /*distancia os elementos entre si*/
+    justify-content: center;
+    list-style-type: none;
+    width: 90%;
+    max-width: 960px;
+}
+
+.list-items{
+    flex-basis: 280px;
+    /*proporciona uma largura ao item*/
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    /*(horizontal px abaixo px esfuçamento px  cor*/
+    background-image: url(imagens/99f29aeabf84e56203a98ceed2023a34.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.item-image img{
+    /*é necessário sempre acrescentar o "img" quando quiser alterar um item com imagem*/
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 120px;
+}
+
+.list-names{
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    font-size: 24px;
+}
+
+.item-opcional{
+    padding: 16px;
+    display: flex;
+    background-color: #e5e5e5;
+    justify-content: space-evenly;
+    gap: 16px;
+    box-shadow: 0px 2px 8px black;
+}
+
+.list-gmail{
+    opacity: 0.3;
+}
